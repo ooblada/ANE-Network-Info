@@ -71,7 +71,7 @@
 
         <!-- paths -->
         <property name="build.intermediates" value="../android/lib/build/intermediates"/>
-        <property name="build.release" value="${build.intermediates}/bundles/release"/>
+        <property name="build.release" value="${build.intermediates}/packaged-classes/release"/>
 
         <!-- make the build directory -->
         <mkdir dir="temp/android"/>
@@ -106,7 +106,7 @@
 
         <!-- Extract aar files -->
         <foreach target="unzipAAR" param="aarFile">
-            <fileset dir="../android/lib/dependencies">
+            <fileset dir="../android/lib/build/outputs/aar">
                 <include name="*.aar"/>
             </fileset>
         </foreach>
@@ -152,7 +152,7 @@
             <env key="AIR_SDK_HOME" value="${air.sdk.home}"/>
             <arg line='-source-path ../actionscript/src'/>
             <arg line='-output temp/swc/${name}.swc'/>
-            <arg line='-swf-version=29'/>
+            <arg line='-swf-version=43'/>
             <arg line='-external-library-path+="${air.sdk.home}/frameworks/libs/air/airglobal.swc"'/>
             <arg line='-include-classes ${classlist}'/>
         </exec>

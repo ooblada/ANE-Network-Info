@@ -14,7 +14,7 @@
  */-->
 
 
-<extension xmlns="http://ns.adobe.com/air/extension/22.0">
+<extension xmlns="http://ns.adobe.com/air/extension/32.0">
     <id>com.freshplanet.ane.AirNetworkInfo</id>
     <versionNumber>1</versionNumber>
     <platforms>
