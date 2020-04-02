@@ -13,8 +13,8 @@
  * limitations under the License.
  */-->
 
-<platform xmlns="http://ns.adobe.com/air/extension/32.0">
-    <sdkVersion>32.0</sdkVersion>
+<platform xmlns="http://ns.adobe.com/air/extension/33.1">
+    <sdkVersion>13.2</sdkVersion>
     <linkerOptions>
         <option>-framework Foundation</option>
         <option>-framework CoreTelephony</option>
