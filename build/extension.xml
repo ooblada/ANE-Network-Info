@@ -14,7 +14,7 @@
  */-->
 
 
-<extension xmlns="http://ns.adobe.com/air/extension/32.0">
+<extension xmlns="http://ns.adobe.com/air/extension/33.1">
     <id>com.freshplanet.ane.AirNetworkInfo</id>
     <versionNumber>1</versionNumber>
     <platforms>
@@ -27,6 +27,20 @@
         </platform>
 
         <platform name="Android-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libAirNetworkInfo.jar</nativeLibrary>
+                <initializer>com.freshplanet.ane.AirNetworkInfo.AirNetworkInfoExtension</initializer>
+                <finalizer>com.freshplanet.ane.AirNetworkInfo.AirNetworkInfoExtension</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="Android-ARM64">
+            <applicationDeployment>
+                <nativeLibrary>libAirNetworkInfo.jar</nativeLibrary>
+                <initializer>com.freshplanet.ane.AirNetworkInfo.AirNetworkInfoExtension</initializer>
+                <finalizer>com.freshplanet.ane.AirNetworkInfo.AirNetworkInfoExtension</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="Android-x86">
             <applicationDeployment>
                 <nativeLibrary>libAirNetworkInfo.jar</nativeLibrary>
                 <initializer>com.freshplanet.ane.AirNetworkInfo.AirNetworkInfoExtension</initializer>
