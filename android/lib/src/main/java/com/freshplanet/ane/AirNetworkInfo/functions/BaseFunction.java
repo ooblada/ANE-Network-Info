@@ -81,7 +81,7 @@ public class BaseFunction implements FREFunction {
 	}
 	
 	protected List<String> getListOfStringFromFREArray(FREArray array) {
-		List<String> result = new ArrayList<String>();
+		List<String> result = new ArrayList<>();
 
 		try {
 			for (int i = 0; i < array.getLength(); i++) {
@@ -139,7 +139,7 @@ public class BaseFunction implements FREFunction {
 	}
 
 	protected List<Bitmap> getListOfBitmapFromFREArray(FREArray array) {
-		List<Bitmap> result = new ArrayList<Bitmap>();
+		List<Bitmap> result = new ArrayList<>();
 
 		try {
 			for (int i = 0; i < array.getLength(); i++) {

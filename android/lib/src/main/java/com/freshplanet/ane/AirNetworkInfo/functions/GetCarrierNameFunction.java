@@ -28,7 +28,7 @@ public class GetCarrierNameFunction extends BaseFunction {
 		super.call(context, args);
 
 		TelephonyManager manager = (TelephonyManager)context.getActivity().getSystemService(Context.TELEPHONY_SERVICE);
-		String carrierName = manager.getNetworkOperatorName();
+		String carrierName = manager != null ? manager.getNetworkOperatorName() : "";
 		try {
 			return FREObject.newObject(carrierName);
 		} catch (Exception e) {
